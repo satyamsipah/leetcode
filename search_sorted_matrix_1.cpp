@@ -7,7 +7,7 @@ vector<int> sortedMatrix(vector<vector<int>> mat, int key) {
     int n = mat.size();
     vector<int> ans;
     for(int i=0; i<n; i++) {
-        for(int j=0; j<n; j++) {
+        for(int j=0; j<m; j++) {
             if(mat[i][j] == key) {
                 ans.push_back(i);
                 ans.push_back(j);
